@@ -37,37 +37,12 @@
         Login
       </button>
     </nav>
-    <a class="btn btn-primary" href="#">Register</a>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">
+      Register
+    </button>
   </div>
 
-  <!-- Modal -->
-  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="loginModal">Login to account</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <form>
-          <div class="p-4">
-            <div class="form-group">
-              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
-                placeholder="Email address" required>
 
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-primary" type="submit">Login</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
 
   <div class="container-fluid">
 
@@ -79,6 +54,93 @@
       <p class="lead">
         <a href="./dashboard/index.html" class="btn btn-lg btn-primary">Get Started</a>
       </p>
+
+
+      <div>
+
+
+        <!-- Login Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="loginModal">Login to account</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form>
+                <div class="p-4">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                      placeholder="Email address" required>
+
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" type="submit">Login</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Register Modal -->
+      <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="registerModal">Sign up for an account</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <form>
+              <div class="p-4">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="inputFirstName" placeholder="First Name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="inputLastName" placeholder="Last Name" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="inputRegisterEmail" aria-describedby="emailHelp"
+                    placeholder="Email address" required>
+
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="inputRegisterPassword" placeholder="Create password"
+                    required>
+                </div>
+
+                <div class="form-group">
+                  <input type="password" class="form-control" id="inputReenterPassword" placeholder="Re-enter password"
+                    required>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" type="submit">Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
     </main>
   </div>
 
